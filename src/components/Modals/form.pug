@@ -1,0 +1,35 @@
+.modal.fade.__modal__form(id="formModal" tabindex="-1" role="dialog" aria-hidden="true")
+    .modal-dialog.modal-dialog-centered(role="document")
+        .modal-content
+            .modal-header.d-md-none
+                button.close(data-dismiss="modal" aria-label="Close" type="button") <span aria-hidden="true">&times;</span>
+            .modal-body
+                form(data-form-trial).modal-form     
+                    h3.form-title Preenchendo abaixo: 
+
+                    .form-row               
+                        .form-group.col-md-12
+                            label(for="nameInput") Nome  <span> (obrigatório) </span>  
+                            input.form-control(type="text" name="name" placeholder="Nome" required="required" id="nameInput")                    
+                    
+                        .form-group.col-md-12
+                            label(for="nameInput") Telefone <span> (obrigatório) </span>
+                            .row 
+                                .col-md-2.col-3
+                                    input.form-control(type="text" name="ddd" placeholder="DDD" required="required" id="nameInput")
+                                .col-md-4.col-9
+                                    .row 
+                                        input.form-control(type="text" name="phone" placeholder="Telefone" required="required" id="nameInput")
+                        
+                        .form-group.col-md-12
+                            label(for="nameInput") E-mail para contato <span> (obrigatório) </span>
+                            input.form-control(type="text" name="email" placeholder="E-mail" required="required" id="nameInput")
+                        .form-group.col-md-12
+                            label(for="nameInput") CNPJ <span> (obrigatório) </span>
+                            input.form-control(type="text" name="cnpj" placeholder="CNPJ" required="required" id="nameInput")
+
+                        .form-group.col-md-12 
+                            label(for="nameInput") Razão Social <span> (obrigatório) </span>
+                            input.form-control(type="text" name="social_reason" placeholder="Segmento" required="required" id="nameInput")
+
+                        button(type="submit").button.__big Seja parceiro

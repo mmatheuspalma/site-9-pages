@@ -1,0 +1,42 @@
+{
+	"name": "structure-front-end",
+	"version": "1.0.0",
+	"description": "Structure front",
+	"main": "index.js",
+	"dependencies": {
+		"browser-sync": "^2.23.5",
+		"gulp": "^4.0.0",
+		"gulp-autoprefixer": "^4.1.0",
+		"gulp-clean": "^0.4.0",
+		"gulp-clean-css": "^3.9.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-filter": "^5.1.0",
+		"gulp-html-beautify": "^1.0.1",
+		"gulp-livereload": "^3.8.1",
+		"gulp-pug": "^3.3.0",
+		"gulp-sass": "^3.1.0",
+		"gulp-sourcemaps": "^2.6.3",
+		"gulp-uglify": "^3.0.0",
+		"gulp-watch": "^5.0.0"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-es2017": "^6.24.1",
+		"gulp-babel": "^7.0.1",
+		"gulp-clean-css": "^3.9.2"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://bitbucket.org/pilhadigital/structure-front-end.git"
+	},
+	"author": "Pilha Digital",
+	"license": "ISC",
+	"homepage": "https://bitbucket.org/pilhadigital/structure-front-end#readme",
+	"resolutions": {
+    "graceful-fs": "^4.2.4"
+  }
+}

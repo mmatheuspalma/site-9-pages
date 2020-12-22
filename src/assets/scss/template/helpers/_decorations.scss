@@ -1,0 +1,52 @@
+.__arrow-divisor {
+    .container {
+        &::before {
+            content: '';
+
+            position: absolute;
+
+            width: 36px;
+            height: 86px;
+
+            background-image: url(../images/patterns/arrow-black.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            bottom: calc(100% - calc(86px / 2));
+            margin-left: -36px;
+
+            @media screen and (max-width: 768px) {
+                margin-right: -15px;
+            }
+        }
+    }
+
+    &.__orange {
+        .container {
+            &::before {
+                background-image: url(../images/patterns/arrow-orange.png);
+            }
+        }
+    }
+
+    &.__inverse {
+        .container {
+            &::before {
+                transform: scale(-1, 1);
+            }
+        }
+    }
+
+    &.__right {
+        .container {
+            &::before {
+                right: 0px;
+                margin-right: -21px;
+
+                @media screen and (max-width: 768px) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}

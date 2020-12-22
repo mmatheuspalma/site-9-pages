@@ -1,0 +1,24 @@
+mixin postItem(version) 
+    .post__item(class=version)
+        .post__item__body
+            .post__item__body__image  
+                a(href="#" title="")
+                if version === '__small'                    
+                    img(src="http://placehold.it/255x135/ccc" alt="" title="")
+                else if version === '__banner'
+                    img(src="http://placehold.it/556x300/ccc" alt="" title="")
+                else if version === '__banner __small'
+                    img(src="http://placehold.it/277x300/ccc" alt="" title="")
+                else if version === '__small __internal'
+                    img(src="http://placehold.it/230x137/ccc" alt="" title="")
+                else if version === '__list'
+                    img(src="http://placehold.it/455x245/ccc" alt="" title="")
+                else
+                    img(src="http://placehold.it/350x200/ccc" alt="" title="")
+            .post__item__body__description
+                span.post__item__body__description__category 
+                    a(href="#" title="") Estoque             
+                h3.post__item__body__description__title 
+                    a(href="#" title="") Indicadores de desempenho <br> e o sucesso de operações
+                span.post__item__body__description__date 
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 07/08/2018

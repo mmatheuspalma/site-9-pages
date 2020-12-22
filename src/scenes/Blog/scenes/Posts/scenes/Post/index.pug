@@ -1,0 +1,142 @@
+extends ../../../../../../components/Layout/Blog/index
+
+include ../../../../../../components/PostItem/index
+
+block content
+    .post__internal 
+        .container
+            .post__internal__image 
+                img(src="http://placehold.it/1110x420/ccc" alt="" title="")
+            .post__internal__share 
+                ul 
+                    li 
+                        a(href="#")
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    li 
+                        a(href="#")
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    li 
+                        a(href="#")
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+            .post__internal__body 
+                header.post__internal__body__header
+                    .post__internal__body__header__categories
+                        ul 
+                            li 
+                                a(href="#")
+                                | Tecnologia
+                            li 
+                                a(href="#")
+                                | Gestão
+                    h1.post__internal__body__header__title
+                        | Funcionalidades específicas para facilitar ainda mais a vida de negócios
+                    .post__internal__body__header__desc
+                        .post__internal__body__header__desc__author
+                            .post__internal__body__header__desc__author__image
+                                img(src="http://placehold.it/24x24/333" alt="" title="")
+                            h5.post__internal__body__header__desc__author__name
+                                | Tiago Pereira 
+                        h5.post__internal__body__header__desc__date
+                            <i class="fa fa-clock-o" aria-hidden="true"></i> 07/08/2018
+                        h5.post__internal__body__header__desc__read 
+                            <i class="fa fa-clock-o" aria-hidden="true"></i> 9 min de leitura
+
+                .post__internal__body__content 
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis augue et orci malesuada tincidunt. Sed faucibus blandit odio, vel pulvinar lacus auctor dignissim. Maecenas malesuada accumsan est ac tempus. In dignissim condimentum suscipit. Quisque quis eleifend dolor. Ut a purus eget neque tristique viverra. Morbi tincidunt semper leo vel vehicula. Nulla sit amet suscipit nisl. Vivamus malesuada congue viverra.
+                    br
+                    p Mauris dapibus tristique ligula blandit pellentesque. Etiam egestas porttitor erat, vitae ornare ante vulputate vitae. Aliquam pharetra vehicula hendrerit. Vivamus sollicitudin at magna ut fermentum. Donec nec sapien non lectus sodales feugiat a a tortor. Ut a erat quam. Fusce cursus, nibh sit amet fermentum aliquet, tortor orci consectetur felis, et accumsan est odio in est. Nulla mattis sem nisi, sed condimentum lacus scelerisque sed.
+                    br
+                    p Mauris dapibus tristique ligula blandit pellentesque. Etiam egestas porttitor erat, vitae ornare ante vulputate vitae. Aliquam pharetra vehicula hendrerit. Vivamus sollicitudin at magna ut fermentum. Donec nec sapien non lectus sodales feugiat a a tortor. Ut a erat quam. Fusce cursus, nibh sit amet fermentum aliquet, tortor orci consectetur felis, et accumsan est odio in est. Nulla mattis sem nisi, sed condimentum lacus scelerisque sed.
+  
+                    .post__internal__body__content__form__promotional 
+                        .post__internal__body__content__form__promotional__title
+                            h4.post__internal__body__content__form__promotional__title__text 
+                                | Aprenda tudo <span> sobre negócios </span>
+                            p.post__internal__body__content__form__promotional__title__subtitle
+                                | Este e-book completo vai ensinar para você tudo sobre negócios e oportunidades.
+                        .post__internal__body__content__form__promotional__form 
+                            form 
+                                .post__internal__body__content__form__promotional__form__field.__half
+                                    label Nome
+                                    input(type="text" placeholder="Nome")
+                                .post__internal__body__content__form__promotional__form__field.__half 
+                                    label E-mail
+                                    input(type="text" placeholder="E-mail")
+                                .post__internal__body__content__form__promotional__form__field.__full 
+                                    label Qual é o segmento do seu negócio?
+                                    select 
+                                        option(value="") Selecione
+                                .post__internal__body__content__form__promotional__form__cta 
+                                    button.button(type="submit") Receber Material
+
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis augue et orci malesuada tincidunt. Sed faucibus blandit odio, vel pulvinar lacus auctor dignissim. Maecenas malesuada accumsan est ac tempus. In dignissim condimentum suscipit. Quisque quis eleifend dolor. Ut a purus eget neque tristique viverra. Morbi tincidunt semper leo vel vehicula. Nulla sit amet suscipit nisl. Vivamus malesuada congue viverra.
+                    br
+                    p Mauris dapibus tristique ligula blandit pellentesque. Etiam egestas porttitor erat, vitae ornare ante vulputate vitae. Aliquam pharetra vehicula hendrerit. Vivamus sollicitudin at magna ut fermentum. Donec nec sapien non lectus sodales feugiat a a tortor. Ut a erat quam. Fusce cursus, nibh sit amet fermentum aliquet, tortor orci consectetur felis, et accumsan est odio in est. Nulla mattis sem nisi, sed condimentum lacus scelerisque sed.
+                    br
+                    p Mauris dapibus tristique ligula blandit pellentesque. Etiam egestas porttitor erat, vitae ornare ante vulputate vitae. Aliquam pharetra vehicula hendrerit. Vivamus sollicitudin at magna ut fermentum. Donec nec sapien non lectus sodales feugiat a a tortor. Ut a erat quam. Fusce cursus, nibh sit amet fermentum aliquet, tortor orci consectetur felis, et accumsan est odio in est. Nulla mattis sem nisi, sed condimentum lacus scelerisque sed.
+
+                    .post__internal__body__content__form__promotional.__product                        
+                        .post__internal__body__content__form__promotional__product
+                            img(src="http://placehold.it/317x228/333" alt="" title="")
+                        .post__internal__body__content__form__promotional__form 
+                            h4.post__internal__body__content__form__promotional__form__title
+                                | Tendências em Tecnologia e Negócios para ficar de olho em 2018
+                            form 
+                                .post__internal__body__content__form__promotional__form__field.__full 
+                                    input(type="text" placeholder="Nome")
+                                .post__internal__body__content__form__promotional__form__field.__full  
+                                    input(type="text" placeholder="E-mail")
+                                .post__internal__body__content__form__promotional__form__cta 
+                                    button.button(type="submit") Baixar o ebook
+                
+                .post__internal__body__tags 
+                    h3.post__internal__body__tags__title 
+                        | <i class="fa fa-tags" aria-hidden="true"></i> Tags
+                    .post__internal__body__tags__items
+                        ul 
+                            li 
+                                a(href="#")
+                                | Tecnologia
+                            li 
+                                a(href="#")
+                                | Gestão
+
+                .post__internal__body__author
+                    h3.post__internal__body__author__title 
+                        | <i class="fa fa-pencil" aria-hidden="true"></i> Escrito por
+                    .post__internal__body__author__desc
+                        .post__internal__body__author__desc__image 
+                            img(src="http://placehold.it/97x97/ccc" alt="" title="")
+                        .post__internal__body__author__desc__info
+                            h4.post__internal__body__author__desc__info__name
+                                | Tiago Pereira
+                            p.post__internal__body__author__desc__info__text 
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique lacus iaculis dolor congue laoreet sit amet eget nunc. 
+
+    .posts__container.__more__viewed.__arrow-divisor.__orange.__post__internal
+        .container
+            .posts__container__title 
+                h2.posts__container__title__text 
+                    | Você pode se <b>interessar também por</b>
+            .posts__container__items
+                +postItem('__small __internal')
+                +postItem('__small __internal')
+                +postItem('__small __internal')
+
+    .newsletter.__arrow-divisor.__post__internal
+        .container
+            .newsletter__info 
+                h2.newsletter__info__title
+                    | Dicas de gestão para <br> <b> você realizar </b>
+                p.newsletter__info__text 
+                    | Obtenha conhecimento e inspiração <br> para criar um negócio lucrativo. <br>
+                    | Toda semana, na sua caixa de entrada.
+            .newsletter__form 
+                input(type="email" placeholder="E-mail")
+                button.button(type="submit") Receba nossas dicas
+
+    .posts__container.__more__viewed.__arrow-divisor.__orange.__post__internal
+        .container
+            .posts__container__title 
+                h2.posts__container__title__text 
+                    | Comentários 

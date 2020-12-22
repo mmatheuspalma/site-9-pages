@@ -1,0 +1,31 @@
+.__plr65 {
+    padding-left: 65px;
+    padding-right: 65px;
+
+    @media screen and (max-width: 768px) {
+        padding-left: 25px; 
+        padding-right: 25px;
+    }
+}
+
+.__npb {
+    padding-bottom: 0px;
+}
+
+.__npt {
+    padding-top: 0px !important;
+}
+
+.__nptb {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.__pb50 {
+    padding-bottom: 50px !important;
+}
+
+.__pdtb20 {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}

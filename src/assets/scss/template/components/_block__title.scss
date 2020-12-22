@@ -1,0 +1,142 @@
+.block__title {
+    width: 100%;
+    float: left;
+    position: relative;
+
+    .container {
+        position: relative;
+        height: 100%;
+        padding: 0px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0px 20px;
+    }
+
+    &.__white {
+        margin-bottom: 20px;
+
+        .block__subtitle,
+        .block__subtitle h4 {
+            color: $primary-color;
+        }
+
+        .block__text h2 {
+            color: #FFFFFF;
+        }
+
+        .block__text h4 {
+            color: $primary-color;
+        }
+
+        &.__item {
+            margin-bottom: 20px;
+
+            .block__text h4 {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &.__arrow {
+        .block__text {
+            &::before {
+                content: '';
+                height: 114px;
+                width: 48px;
+
+                background-image: url(../images/icons/seta-prabaixo.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+
+                left: -61px;
+                top: 50px;
+
+                @media screen and (max-width: 768px) {
+                    left: -35px;
+                }
+
+                @media screen and (max-width: 320px) {
+                    left: -17px;
+                }
+            }
+        }
+    }
+
+    &.__item {
+        margin: 70px 0px;
+
+        @media screen and (max-width: 768px) {
+            margin: 30px 0px;
+        }   
+
+        .block__text {            
+            h4 {
+                font-size:24px;
+                line-height: 24px;
+                color: #403B36;
+                font-weight: bold;
+                text-align: center;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+    .block__subtitle, .block__subtitle h4 {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+
+        color: $primary-color;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    
+    .block__text {
+        position: relative;
+        height: 100%;
+
+        h2 {
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: 300;
+            text-align: center;
+            letter-spacing: -0.57px;
+
+            color: #403b36;
+
+            margin: 0px;
+
+            b, strong {
+                font-weight: 900;
+            }            
+
+            @media screen and (max-width: 768px) {
+                font-size: 24px;
+                line-height: 28px;
+                
+                max-width: 287px;
+            }
+
+            span {
+                text-underline-position: under;
+            }
+        }
+    }  
+}

@@ -1,0 +1,24 @@
+extends ../../../../components/Layout/Blog/index
+
+include ../../../../components/PostItem/index
+include ../../../../components/Pagination/index
+
+block content
+    .posts__container.__posts__list 
+        .container
+            .posts__container__title.__category     
+                h1.posts__container__title__text
+                    .posts__container__title__text__icon 
+                        img(src="http://placehold.it/38x38/333")
+                    | Finanças
+                p.posts__container__title__desc 
+                    | Organize suas finanças e melhore seus rendimentos
+            .posts__container__items
+                +postItem('__list')
+                +postItem('__list')
+                +postItem('__list')
+                +postItem('__list')
+
+                +pagination()
+                
+    include ../../../../components/Newsletter/index

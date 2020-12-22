@@ -1,0 +1,101 @@
+.list__items {
+    position: relative;
+    float: left;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 74px;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 36px !important;
+    }
+
+    .list__items__item {
+        width: 100%;
+        max-width: 645px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 30px !important;
+            }
+        }
+
+        .list__items__item__number {
+            width: 88px;
+            height: 88px;
+            
+            background-color: #E4E2D8;
+
+            border-radius: 100%;
+
+            color: $primary-color;
+            font-size: 38px;
+            font-weight: 900;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-right: 64px;
+
+            transition: all 0.5s;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 28px;
+                margin-right: 0px !important;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all 0.5s;
+                cursor: pointer;
+
+                box-shadow: 0 0px 5px -1px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .list__items__item__text {
+            max-width: 490px;  
+            
+            @media screen and (max-width: 768px) {
+                max-width: 100%;
+                padding: 0px 20px;
+            }
+
+            p {
+                width: 100%;
+                margin: 0px;
+
+                font-size: 18px;
+                line-height: 26px;
+
+                color: #403b36;
+                font-weight: 400;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 1em;       
+                    
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

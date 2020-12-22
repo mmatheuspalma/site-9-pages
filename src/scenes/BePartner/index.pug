@@ -1,0 +1,119 @@
+extends ../../components/Layout/index
+
+block content
+    section.banner
+        include ../../components/Banner/Banner/index
+        .container 
+            .row
+                .products__system
+                    .products__system__content 
+                        .products__system__content__category 
+                            | É da nossa conta!
+                        .products__system__content__title 
+                            | Seja Parceiro <br/>
+                            | Granito
+                        .products__system__content__text 
+                            | Lorem ipsum dolor sit amet, consecte-<br/>
+                            | tur adipiscing elit. Curabitur et aliquet ex<br/>
+                            | Praesent vitae scelerisque neque. 
+
+    .solutions
+        .container 
+            .row   
+                .solutions__solution.__active
+                    .solutions__solution__image 
+                        img(src="../../assets/images/icon-seja-parceiro-franqueado.png")
+                    .solutions__solution__title
+                        a(href="scenes/Solution") 
+                            | Seja um franqueado <br/>
+                            |  granito
+                .solutions__solution 
+                    .solutions__solution__image 
+                        img(src="../../assets/images/icon-seja-parceiro-software.png")
+                    .solutions__solution__title 
+                        a(href="scenes/Solution") 
+                            | Integre seu software <br/>
+                            |  conosco
+                .solutions__solution 
+                    .solutions__solution__image 
+                        img(src="../../assets/images/icon-seja-parceiro-financeiras.png")
+                    .solutions__solution__title 
+                        a(href="scenes/Solution") 
+                            | Parceirias com instituições <br/>
+                            | financeiras e de fomento
+                .solutions__solution 
+                    .solutions__solution__image 
+                        img(src="../../assets/images/icon-seja-parceiro-bandeiras.png")
+                    .solutions__solution__title 
+                        a(href="scenes/Solution") 
+                            | Bandeiras <br/>
+                            | Regionais
+
+
+    section.products__system.__gray.__mask__top.__mask__bottom(style="height: 660px;")
+        .container 
+            .row
+                .products__system__content
+                    .products__system__content__category 
+                        | Franquia
+                    .products__system__content__title 
+                        | Seja um <br/>
+                        | Franqueado <br/>
+                        | Granito
+                    .products__system__content__text 
+                        | Lorem ipsum dolor sit amet, consectetur <br />
+                        | adipiscing elit. Curabitur et aliquet ex. <br />
+                        | Praesent vitae scelerisque neque. Proin <br />
+                        | maximus mauris sed diam pulvinar.
+                        | <br /> <br />
+                        | Com a nossa franquia você garante >>
+                .products__system__items 
+                    .products__system__items__item 
+                        img(src="../../assets/images/icon-economia-franquia.png")
+                        h3 
+                            | <span> Economia </span> com a compra de uma única <br/> máquina de cartão. 
+                    .products__system__items__item 
+                        img(src="../../assets/images/icon-controle-franquia.png")
+                        h3 
+                            | <span> Controle individual </span> dos valores. 
+                    .products__system__items__item 
+                        img(src="../../assets/images/icon-retrabalho-franquia.png")
+                        h3 
+                            | <span> Fim do retrabalho, </span> sem o repasse de va- <br/> lores entre as pessoas. 
+
+    section.products__system.__mask__bottom(style="height: 660px; padding-top: 100px;")
+        .container 
+            .row
+                .products__system__content
+                    .products__system__content__category 
+                        | Faça seu cadastro
+                    .products__system__content__title 
+                        | Preencha com <br/>
+                        | seus dados <br/>
+                        | e cadastre-se
+                    .products__system__content__text 
+                        | Lorem ipsum dolor sit amet, consectetur <br />
+                        | adipiscing elit. Curabitur et aliquet ex. <br />
+                        | Praesent vitae scelerisque neque. Proin <br />
+                        | maximus mauris sed diam pulvinar.
+                .products__system__form 
+                    form 
+                        .products__system__form__field.__full 
+                            label Razão Social 
+                            input(type="text" name="razao_social" placeholder="Digite aqui o nome da sua empresa")
+                        .products__system__form__field.__half 
+                            label Nome 
+                            input(type="text" name="razao_social" placeholder="Digite aqui o seu nome")
+                        .products__system__form__field.__half 
+                            label E-mail 
+                            input(type="text" name="razao_social"  placeholder="contato@empresa.com.br")
+                        .products__system__form__field.__half 
+                            label Fone
+                            input(type="text" name="razao_social"  placeholder="( ) ____ ____")
+                        .products__system__form__field.__half 
+                            label Site
+                            input(type="text" name="razao_social"   placeholder="suaempresa.com.br")
+                        button(type="submit").button Enviar
+
+
+

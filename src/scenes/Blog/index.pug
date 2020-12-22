@@ -1,0 +1,40 @@
+extends ../../components/Layout/Blog/index
+
+include ../../components/PostItem/index
+
+block content
+    .posts__container.__banner__posts 
+        .container
+            .posts__container__title 
+                h2.posts__container__title__text
+                    | Últimos <b>posts</b>
+            .posts__container__items
+                +postItem('__banner')
+                +postItem('__banner __small')
+                +postItem('__banner __small')
+
+    .posts__container.__more__viewed.__arrow-divisor.__orange.__inverse.__right
+        .container
+            .posts__container__title 
+                h2.posts__container__title__text 
+                    | Mais <b>vistos</b>
+            .posts__container__items
+                +postItem('__small')
+                +postItem('__small')
+                +postItem('__small')
+                +postItem('__small')
+
+    .posts__container 
+        .container
+            .posts__container__title 
+                h2.posts__container__title__text 
+                    | Todos os <b>posts</b>
+            .posts__container__items
+                +postItem()
+                +postItem()
+                +postItem()
+                +postItem()
+                +postItem()
+                +postItem()
+
+    include ../../components/Newsletter/index

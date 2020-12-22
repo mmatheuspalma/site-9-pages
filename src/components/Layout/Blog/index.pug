@@ -1,0 +1,37 @@
+doctype html
+html(lang="pt-br") 
+    head
+        title Granito Blog
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        // OG
+        meta(property="og:locale" content="pt_BR")
+        meta(property="og:url" content="")
+        meta(property="og:title" content="Granito Blog")
+        meta(property="og:site_name" content="Totvs")
+        meta(property="og:type" content="website")
+        meta(property="og:description" content="")
+        meta(property="og:image" content="")
+        meta(property="og:image:type" content="image/jpeg")
+        meta(property="og:image:width" content="800")
+        meta(property="og:image:height" content="600")
+        // Default
+        meta(name="keywords" content="")
+        meta(name="description" content="")
+        meta(name="author" content="Pilha Digital")
+
+        block styles
+            link(rel="stylesheet", href="/public/assets/css/styles.min.css")
+    body
+        include ./../../../components/Layout/Blog/Header/index
+        block content        
+        include ./../../../components/Layout/Blog/Footer/index
+
+        include ./../../../components/Modals/video
+        include ./../../../components/Modals/form
+
+        block scripts
+            script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js")
+            script(src="/public/assets/js/scripts.min.js")

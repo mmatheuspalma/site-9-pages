@@ -1,0 +1,7 @@
+@mixin createPulseAnimation($radius, $color, $name) {
+    @keyframes #{$name} {
+        to {
+            box-shadow: 0 0 0 $radius darken($color, 5%);
+        }
+    }
+}

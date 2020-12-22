@@ -1,0 +1,92 @@
+extends ../../components/Layout/index
+
+block content
+    include ../../components/Banner/Banner/index
+
+    section.products__system.__centered.__g
+        .container 
+            .row
+                .products__system__carousel 
+                    .products__system__carousel__item 
+                        img(src="../../assets/images/img-home-solucoes-slide-granito.png")
+                .products__system__content 
+                    .products__system__content__category 
+                        | Soluções
+                    .products__system__content__title 
+                        | Mais <br/>
+                        | resultados <br/> 
+                        | menos <br/> 
+                        | complicações
+                    .products__system__content__list 
+                        ul 
+                            li Bar e Restaurante 
+                            li Beleza e Estética
+                            li Clínica Médica
+                            li Meios de pagamento integrado
+                            li Pagamento fornecedor 
+                            li Serviços recorrentes e por assinatura 
+                            li Solução de pagamento omnichannel
+
+    section.products__system.__centered.__gray.__inverse.__mask__bottom.__functions.__mask__top
+        .container 
+            .row
+                .products__system__carousel 
+                    .products__system__carousel__item 
+                        img(src="../../assets/images/img-vantagens.png")
+                .products__system__content 
+                    .products__system__content__category 
+                        | Funcionalidades
+                    .products__system__content__title 
+                        | Vantagens <br/>
+                        | e facilidades <br/> 
+                        | da nossa <br/> 
+                        | parceria
+                    .products__system__content__text 
+                        | Lorem ipsum dolor sit amet, consectetur <br/> adipiscing elit. Curabitur et aliquet ex. <br/> Praesent vitae scelerisque neque. Proin  <br/>maximus mauris sed diam pulvinar.
+                    a.button(href="#") Ver todos os benefícios
+
+
+    section.products__system.__mask__bottom.__correct__system
+        .container 
+            .row 
+                .products__system__content 
+                    .products__system__content__category 
+                        | Produtos 
+                    .products__system__content__title 
+                        | O sistema certo <br/> para cada negócio, <br/> simples e eficiente 
+                    .products__system__content__items 
+                        .products__system__content__items__item 
+                            .products__system__content__items__item__image
+                                img(src="../../assets/images/thumb-maq-bolso-laranja.png")
+                            .products__system__content__items__item__desc 
+                                | Granito <br/> <span> de bolso </span>
+                        .products__system__content__items__item 
+                            .products__system__content__items__item__image
+                                img(src="../../assets/images/thumb-maq-completa-cinza.png")
+                            .products__system__content__items__item__desc 
+                                | Granito <br/> <span> completa </span>
+                        .products__system__content__items__item 
+                            .products__system__content__items__item__image
+                                img(src="../../assets/images/thumb-maq-tef-cinza.png")
+                            .products__system__content__items__item__desc 
+                                | Granito <br/> <span> Tef</span>
+                .products__system__carousel 
+                    .products__system__carousel__item 
+                        img(src="../../assets/images/img-maq-tef.jpg")
+
+
+    //- section.blog__carousel(style="background-image: url('../../assets/images/img-blog.jpg');")        
+    //-     .blog__carousel__carousel 
+    //-         .blog__carousel__carousel__item 
+    //-             .blog__carousel__carousel__item__category 
+    //-                 | BLOG 
+    //-             .blog__carousel__carousel__item__title 
+    //-                 | Lorem ipsum dolor <br/> sitamet, consectetur <br/> adipis 
+    //-             .blog__carousel__carousel__item__text 
+    //-                 | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et aliquet ex. Praesent vitae scelerisque neque. Proin maximus mauris sed diam pulvinar.
+    //-             a(href="#").blog__carousel__carousel__item__cta Leia mais
+    //-         .blog__carousel__carousel__controll
+    //-             .blog__carousel__carousel__controll__item.__left 
+    //-                 img(src="http://placehold.it/32x23/ccc?text=<")
+    //-             .blog__carousel__carousel__controll__item.__right 
+    //-                 img(src="http://placehold.it/32x23/ccc?text=>")

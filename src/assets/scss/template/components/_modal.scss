@@ -1,0 +1,154 @@
+.__modal__video .modal-body {
+    padding: 0px;
+}
+
+.__modal__form .modal-body {
+    padding: 0px;
+}
+
+@media (min-width: 576px) {
+    .__modal__video .modal-dialog {
+        max-width: 1080px;
+    }
+}
+
+.video__container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.__modal__video .modal-dialog {
+    width: 100%;
+}
+
+.video__container iframe,
+.video__container object,
+.video__container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.__modal__form {
+    @media screen and (max-width: 768px) {
+        padding-right: 0px !important;
+    }
+
+    .modal-dialog {
+        @media (min-width: 576px) {        
+            width: 100%;
+            height: 100%;
+            max-width: 921px;
+            max-height: 720px;
+            min-height: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            height: 100%;
+
+            margin: 0px;
+        }
+
+        .modal-content {
+            @media (min-width: 576px) {   
+                min-height: 100%;
+
+                width: 100%;
+                height: auto;
+                
+                padding: 25px 0px;
+
+                margin-top: 15px;
+            }
+
+            @media screen and (max-width: 768px) {
+                height: 100%;
+                width: 100%;
+
+                border: none;
+                border-radius: 0px;
+            }
+
+            .modal-body {
+                @media (min-width: 576px) {   
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+
+                @media screen and (max-width: 768px) {
+                    padding: 20px 20px;
+                    align-items: center;
+                    display: flex;
+                }
+
+                .modal-form {
+                    height: 100%;
+                    width: 100%;
+                
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                
+                    .form-row {            
+                        padding: 0 250px;
+
+                        justify-content: center;
+
+                        @media screen and (max-width: 768px) {
+                            padding: 0px;
+                        }
+                        
+                        p {
+                            width: 100%;
+
+                            display: flex;
+                            justify-content: center;
+                        }
+
+                        .button {
+                            margin-top: 15px;            
+
+                            @media screen and (max-width: 768px) {
+                                margin-top: 20px;
+                                width: calc(100% - 10px);
+                                padding: 18px 0px;
+                                height: 50px;
+
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+            
+                    .form-title {
+                        margin: 0px 0px 30px 0px;
+                        
+                        font-size: 42px;
+                        line-height: 50px;
+                        font-weight: 300;
+                        text-align: center;
+                        
+                        color: #403B36;
+            
+                        @media screen and (max-width: 768px) {
+                            font-size: 18px;
+                            line-height: 18px;
+            
+                            margin-bottom: 20px;
+
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+

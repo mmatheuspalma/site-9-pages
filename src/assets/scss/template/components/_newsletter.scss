@@ -1,0 +1,158 @@
+.newsletter {
+    position: relative;
+    float: left;
+
+    width: 100%;
+    height: auto;
+
+    padding: 112.5px 0px;
+
+    background-color: #F4F4F4;
+
+    @media screen and (max-width: 768px) {
+        padding: 40px 0px;
+    }
+
+    &.__white {
+        background-color: #ffffff;
+    }
+
+    &.__post__internal {
+        padding: 88px 0px;
+
+        background-color: #FFFFFF;
+
+        @media screen and (max-width: 768px) {
+            padding: 40px 0px;
+        }
+
+        .container {
+            max-width: 820px;
+        }
+
+        .newsletter__info { 
+            .newsletter__info__title {
+                font-size: 30px;
+                line-height: 35px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+            }
+
+            .newsletter__info__text { 
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .newsletter__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .container {
+        height: 100%;
+
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    .newsletter__info {
+        .newsletter__info__title {
+            font-size: 38px;
+            line-height: 38px;
+            font-weight: 300;
+
+            color: #403B36;
+
+            margin: 0px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 30px;
+                line-height: 30px;
+            }
+
+            b {
+                position: relative;
+
+                font-weight: 900;
+
+                &::after {
+                    content: '';
+
+                    position: absolute;
+
+                    bottom: -10px;
+                    left: 0px;
+
+                    width: 100%;
+                    height: 7px;
+
+                    background-image: url(../images/patterns/orange-risk.png);
+                    background-repeat: no-repeat;
+                    background-position: center;                
+                }
+            }
+        }
+
+        .newsletter__info__text {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: normal;
+            text-align: left;
+
+            color: #919191;
+
+            margin: 0px;
+            margin-top: 25px;
+        }
+    }
+
+    .newsletter__form {
+        width: 459px;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+
+            margin-top: 20px;
+        }
+
+        input {
+            width: 100%;
+            height: 42px;
+
+            border: 1px solid #D7D7D7;
+            background-color: #FFFFFF;
+            box-shadow: none;
+
+            border-radius: 10px;
+
+            text-indent: 22px;
+
+            &::placeholder {
+                color: #919191;
+            }
+        }
+
+        button {
+            width: 230px;
+            height: 40px;
+
+            margin-top: 14px;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+}
