@@ -124,3 +124,11 @@ gulp.task('default', gulp.series(
 	'browser-sync', 
 	'watch'
 ));
+
+gulp.task('build', gulp.series(
+	'components',
+	'scenes', 
+	'styles', 
+	'scripts',
+    'move-assets',
+));
